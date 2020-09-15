@@ -111,7 +111,7 @@ const appPropose = ({propose, log}) => async ({httpAdminUrl}) => {
 //   return!((true, "Hello from blockchain!"))
 // }
 // TODO: make it stack safe
-const rhoExprToJS = input => {
+export const rhoExprToJS = input => {
   const loop = rhoExpr => convert(rhoExpr)(converters)
   const converters = R.toPairs(converterMapping(loop))
   return loop(input)

@@ -1,11 +1,13 @@
 // @ts-check
 import * as R from 'ramda'
-import { ec } from 'elliptic'
+import elliptic from 'elliptic'
 
 import { encodeBase16, decodeBase16 } from './lib.js'
 import { verifyDeployEth, recoverPublicKeyEth } from './eth/eth-sign.js'
 import { ethDetected, ethereumAddress, ethereumSign } from './eth/eth-wrapper.js'
 import { signDeploy, verifyDeploy, deployDataProtobufSerialize } from './rnode-sign'
+
+const { ec } = elliptic
 
 /**
  * @typedef {(httpUrl: string, apiMethod: string, data?) => Promise<any>} RNodeHttp

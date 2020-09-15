@@ -1,8 +1,11 @@
 // @ts-check
-import { keccak256 } from 'js-sha3'
+import sha3 from 'js-sha3'
 import blake from 'blakejs'
-import { ec } from 'elliptic'
+import elliptic from 'elliptic'
 import { decodeBase16, encodeBase58, encodeBase16, decodeBase58safe } from './lib'
+
+const { keccak256 } = sha3
+const { ec } = elliptic
 
 const secp256k1 = new ec('secp256k1')
 

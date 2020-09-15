@@ -1,8 +1,10 @@
-import { ec } from 'elliptic'
+import elliptic from 'elliptic'
 import ethUtil from 'ethereumjs-util'
 
 import { decodeAscii } from '../lib.js'
 import { deployDataProtobufSerialize } from '../rnode-sign.js'
+
+const { ec } = elliptic
 
 /**
  * Recover public key from Ethereum signed data and signature.

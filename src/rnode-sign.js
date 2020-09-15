@@ -1,7 +1,9 @@
 // @ts-check
 import blake from 'blakejs'
-import { ec } from 'elliptic'
+import elliptic from 'elliptic'
 import jspb from 'google-protobuf'
+
+const { ec } = elliptic;
 
 /**
  * These deploy types are based on protobuf specification which must be

@@ -1,5 +1,5 @@
 import { ec } from 'elliptic'
-import * as ethUtil from 'ethereumjs-util'
+import ethUtil from 'ethereumjs-util'
 
 import { decodeAscii } from '../lib.js'
 import { deployDataProtobufSerialize } from '../rnode-sign.js'

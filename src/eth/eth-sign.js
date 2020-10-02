@@ -1,9 +1,9 @@
 import elliptic from 'elliptic'
-import ethUtil from 'ethereumjs-util'
 
 import { decodeAscii } from '../lib.js'
 import { deployDataProtobufSerialize } from '../rnode-sign.js'
 
+const ethUtil = require('ethereumjs-util')
 const { ec } = elliptic
 
 /**

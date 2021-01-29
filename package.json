@@ -17,7 +17,7 @@
     "gh-pages": "npm run build-web && git checkout gh-pages && rm web.* style.* && cp dist/* . && git add ."
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.2",
+    "@babel/runtime": "^7.12.5",
     "@grpc/grpc-js": "^0.6.5",
     "@tgrospic/rnode-grpc-js": "^0.8.5",
     "blakejs": "^1.1.0",
